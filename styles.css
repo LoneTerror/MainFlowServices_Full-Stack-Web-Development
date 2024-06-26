@@ -1,0 +1,136 @@
+body {
+    font-family: 'Arial', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background: rgb(84, 8, 128);
+    position: relative;
+    background: url('bg.jpg') no-repeat center center fixed;
+    background-size: cover;
+}
+
+.container{
+    text-align: center;
+    background: rgba(86, 26, 136, 0.829);
+    padding: 50px 80px;
+    border-radius: 30px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+h1{
+    font-size: 2em;
+    margin-bottom: 40px;
+    margin-top: 5px;
+    color: rgb(199, 137, 4);
+}
+
+.timer{
+    font-size: 3.5em;
+    margin-bottom: 20px;
+    color: rgb(218, 218, 218);
+}
+
+.controls button{
+    font-size: 1.2em;
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    background: rgb(3, 119, 3);
+    color: rgb(255, 255, 255);
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.controls button:hover{
+    background: rgb(161, 47, 18);
+    transform: scale(1.16);
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+#creds{
+    font-family: "Playwrite AU SA", cursive;
+    position: absolute;
+    bottom: 30px;
+    left: 3em;
+    font-size: 20px;
+    padding: 1px 12px;
+    background: rgb(0, 141, 71);
+    color: rgb(248, 248, 248);
+    border: none;
+    border-radius: 7px;
+    cursor: pointer;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#creds:hover{
+    background-color: rgb(214, 214, 214);
+    color: black;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    transform: scale(1.16);
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#creds.active{
+    background: rgba(168, 123, 97, 0.952);
+    color: rgb(255, 255, 255);
+    cursor: default;
+    border: none;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 100px;
+    padding: 5px;
+    margin: 7px;
+}
+
+.webpage{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+.creds{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
+.navbar{
+    background-color: rgba(5, 5, 5, 0.575);
+    color: rgb(203, 167, 218);
+    position: fixed;
+    width: 100%;
+    top: 0;
+    
+}
+
+.navbar ul{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    justify-content: space-around;
+}
+
+.navbar ul li{
+    font-family: "Playwrite AU SA", cursive;
+    font-optical-sizing: 0;
+    font-weight: 10px;
+    font-size: 25px;
+    padding: 4px 15px;
+}
+
+.navbar ul li:hover{
+    background-color: rgba(255, 255, 255, 0.747);
+    color: rgb(0, 0, 0);
+    text-decoration-thickness: 20px;
+    transform: scale(1.05); 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+}

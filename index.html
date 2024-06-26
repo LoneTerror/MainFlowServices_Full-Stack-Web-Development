@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pomodoro Timer</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playwrite+AU+SA:wght@100..400&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <nav class="navbar">
+        <ul>
+            <li>
+                Home
+            </li>
+
+            <li>
+                About
+            </li>
+
+            <li>
+                Contact
+            </li>
+        </ul>
+    </nav>
+
+    <div class="container" id="pomodoro-timer">
+        <h1>Pomodoro Timer</h1>
+        <div class="timer">
+            <span id="minutes">25</span>:<span id="seconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="start-stop">Start</button>
+            <button id="pause">Pause</button>
+            <button id="break">Break</button>
+        </div>
+    </div>
+    <div class="container" id="break-timer" style="display: none;">
+        <h1>Break</h1>
+        <h4>Refill your Coffee? :D </h4>
+        <div class="timer">
+            <span id="break-minutes">05</span>:<span id="break-seconds">00</span>
+        </div>
+        <div class="controls">
+            <button id="break-start-stop">Start</button>
+            <button id="break-pause">Pause</button>
+            <button id="work">Work</button>
+        </div>
+    </div>
+
+    <div class="creds">
+        <button id="creds">Creds</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
